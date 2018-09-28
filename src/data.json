@@ -1,0 +1,21 @@
+{
+  "timeoutSeconds": "30",
+  "numQuestions": "12",
+  "quiz": [
+    {
+      "question": "Look at the photo. Are the traits inheritied or acquired?",
+      "option1": "Inherited",
+      "option2": "Acquired"
+    },
+    {
+      "question": "Does the photo show something interesting?",
+      "option1": "Yes",
+      "option2": "No"
+    },
+    {
+      "question": "Is hair color inheritied or acquired?",
+      "option1": "Inherited",
+      "option2": "Acquired"
+    }
+  ]
+}
