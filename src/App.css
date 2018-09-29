@@ -1,28 +1,33 @@
-.App {
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h2 {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+h3 {
+  text-align: center;
 }
 
-.App-title {
-  font-size: 1.5em;
+.quiz-slide {
+
 }
 
-.App-intro {
-  font-size: large;
+.question {
+  left: 50%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.photo {
+  /*text-align: center;*/
+}
+
+.option1 {
+  position: absolute;
+  left: 20%;
+}
+
+.option2 {
+  position: absolute;
+  right: 20%;
 }

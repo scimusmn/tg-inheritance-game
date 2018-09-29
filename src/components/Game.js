@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _filter from 'lodash/filter';
 import QuizSlide from './QuizSlide';
+import Mousetrap from 'mousetrap';
 import data from '../data.json';
 
 export default class Game extends Component {
@@ -27,11 +28,20 @@ export default class Game extends Component {
     this.quizData = data.quiz;
     this.quizIndex = 0;
 
-    this.refreshQuiz();
+    // Bind keyboard
+    Mousetrap.bind('1', () => {
+      console.log('Left (1) button press');
+      this.answerInput(1);
+    });
+    Mousetrap.bind('2', () => {
+      console.log('Right (2) button press');
+      this.answerInput(2);
+    });
+    Mousetrap.bind('r', () => {
+      console.log('Reset (r) button press');
+    });
 
-    setInterval( () => {
-      this.nextQuestion();
-    }, 3000);
+    this.refreshQuiz();
 
   }
 
@@ -40,6 +50,24 @@ export default class Game extends Component {
   }
 
   componentWillUnmount() {
+
+  }
+
+  answerInput(answer) {
+
+    if (this.quizIndex >= this.quizData.length) {
+      return;
+    }
+
+    const correctAnswer = this.quizData[this.quizIndex].correctAnswer;
+
+    if (answer == correctAnswer) {
+      console.log('That is correct');
+      this.nextQuestion();
+    } else {
+      console.log('That is incorrect');
+      this.nextQuestion();
+    }
 
   }
 
@@ -67,7 +95,7 @@ export default class Game extends Component {
     const current = this.quizData[this.quizIndex];
     console.log(current);
 
-    this.setState({ question: current.question, option1: current.option1, option2: current.option2, photoSrc:'https://picsum.photos/200/300/?random'});
+    this.setState({ question: current.question, option1: current.option1, option2: current.option2, photoSrc:current.photoSrc});
 
   }
 

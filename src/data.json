@@ -5,17 +5,23 @@
     {
       "question": "Look at the photo. Are the traits inheritied or acquired?",
       "option1": "Inherited",
-      "option2": "Acquired"
+      "option2": "Acquired",
+      "photoSrc": "https://picsum.photos/200/300/?random",
+      "correctAnswer": 1
     },
     {
       "question": "Does the photo show something interesting?",
       "option1": "Yes",
-      "option2": "No"
+      "option2": "No",
+      "photoSrc": "https://picsum.photos/250/?random",
+      "correctAnswer": 2
     },
     {
       "question": "Is hair color inheritied or acquired?",
       "option1": "Inherited",
-      "option2": "Acquired"
+      "option2": "Acquired",
+      "photoSrc": "https://picsum.photos/300/?random",
+      "correctAnswer": 2
     }
   ]
 }
