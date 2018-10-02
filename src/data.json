@@ -1,26 +1,148 @@
 {
   "timeoutSeconds": "30",
   "numQuestions": "12",
+  "introduction": "In order to save the VISTAs from the exterminators, you must first demonstrate your knowledge of evolution by solving a challenge. Press any button to begin.",
+  "incorrectFeedback": "You can unlock the pigeon challenge by showing you really are an evolution expert, and this goof up was all just a silly little misunderstanding.",
+  "overTimeFeedback": "You have reached the maximum amount of time available to take this challenge.",
   "quiz": [
     {
-      "question": "Look at the photo. Are the traits inheritied or acquired?",
-      "option1": "Inherited",
-      "option2": "Acquired",
-      "photoSrc": "https://picsum.photos/200/300/?random",
-      "correctAnswer": 1
-    },
-    {
-      "question": "Does the photo show something interesting?",
-      "option1": "Yes",
-      "option2": "No",
-      "photoSrc": "https://picsum.photos/250/?random",
+      "question": "Eye color",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/eye color.png",
       "correctAnswer": 2
     },
     {
-      "question": "Is hair color inheritied or acquired?",
-      "option1": "Inherited",
-      "option2": "Acquired",
-      "photoSrc": "https://picsum.photos/300/?random",
+      "question": "Wizard scar",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/Screen Shot 2018-09-17 at 9.25.45 AM.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Hair color",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/hair color.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Rainbow hair color",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/Rainbow hair.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Speaking the language of your parents",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/speaking language of parents.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "This dog with an amputation will have three-legged puppies",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/dog with amputation.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Ability to swim",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/swimming.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "A parent and her children?",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/dog and _kids_.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Ability to swim",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/swimming.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "This woman had surgery to change the shape of her nose. Her children’s noses will look like her new nose.",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/before and after.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Dimples",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/dimples.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "They all belong to the same litter",
+      "option1": "Yes",
+      "option2": "No",
+      "photoSrc": "./images/litter.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Tom Cruise wore braces to straighten his teeth. It’s  likely his kids will be born with straight teeth.",
+      "option1": "Yes",
+      "option2": "No",
+      "photoSrc": "./images/Tom Cruise.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Spots",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/spots.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Height",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/height.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Yellow petals",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/petals.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Skin color",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/skin.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Their children will be born with tattoos.",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/tattoo 2.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Ability to read",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/reading.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "A mutation like this could pop up at any time.",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/mutant.png",
       "correctAnswer": 2
     }
   ]
