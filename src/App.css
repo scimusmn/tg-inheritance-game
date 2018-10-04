@@ -28,16 +28,21 @@ h3 {
   top: 2%;
   left: 2%;
   text-align: center;
-  color: gray;
+  color: #BCBCBC;
+
+}
+
+.prev-feedback h3 {
+  text-align: left;
   font-weight: 100;
 }
 
-.feedback.correct {
+.prev-feedback .correct {
   color: green;
   font-weight: bold;
 }
 
-.feedback.incorrect {
+.prev-feedback .incorrect {
   color: red;
   font-weight: bold;
 }

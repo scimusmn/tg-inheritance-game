@@ -6,6 +6,13 @@
   "overTimeFeedback": "You have reached the maximum amount of time available to take this challenge.",
   "quiz": [
     {
+      "question": "Ready?",
+      "option1": " ",
+      "option2": " ",
+      "photoSrc": "./images/default.png",
+      "correctAnswer": 2
+    },
+    {
       "question": "Eye color",
       "option1": "Acquired",
       "option2": "Inherited",
@@ -143,6 +150,13 @@
       "option1": "No",
       "option2": "Yes",
       "photoSrc": "./images/mutant.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Finished!",
+      "option1": " ",
+      "option2": " ",
+      "photoSrc": "./images/default.png",
       "correctAnswer": 2
     }
   ]

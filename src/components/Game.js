@@ -20,6 +20,8 @@ export default class Game extends Component {
     this.quizData = [];
     this.quizIndex = 0;
     this.answeredCorrectly = -1;
+    this.questionsAnswered = 0;
+    this.totalPoints = 0;
     this.feedbackText = '';
 
   }
@@ -59,6 +61,7 @@ export default class Game extends Component {
   resetGame() {
 
     this.quizIndex = -1;
+    this.totalPoints = this.questionsAnswered = 0;
     this.nextQuestion();
     this.feedbackText = '';
 
@@ -66,23 +69,30 @@ export default class Game extends Component {
 
   answerInput(answer) {
 
-    if (this.quizIndex >= this.quizData.length) {
-      return;
+    // Don't count first and last quiz slide (for now)
+    if (this.quizIndex > 0 && this.quizIndex < this.quizData.length - 1) {
+
+      const correctAnswer = this.quizData[this.quizIndex].correctAnswer;
+
+      if (answer == correctAnswer) {
+        console.log('That is correct');
+        this.answeredCorrectly = 1;
+        this.feedbackText = 'Correct';
+        this.totalPoints ++;
+
+      } else {
+        console.log('That is incorrect');
+        this.answeredCorrectly = 2;
+        this.feedbackText = 'Incorrect';
+
+      }
+
+      this.questionsAnswered ++;
+
+      console.log(this.totalPoints, ' / ', this.questionsAnswered)
+
     }
 
-    const correctAnswer = this.quizData[this.quizIndex].correctAnswer;
-
-    if (answer == correctAnswer) {
-      console.log('That is correct');
-      this.answeredCorrectly = 1;
-      this.feedbackText = 'Correct';
-
-    } else {
-      console.log('That is incorrect');
-      this.answeredCorrectly = 2;
-      this.feedbackText = 'Incorrect';
-
-    }
 
     this.nextQuestion();
 
@@ -134,7 +144,10 @@ export default class Game extends Component {
         <QuizSlide question={this.state.question} option1={this.state.option1} option2={this.state.option2} photoSrc={this.state.photoSrc} />
 
         {this.feedbackText != '' &&
-          <h3 className="prev-feedback">Previous answer: <span className={this.getFeedbackClass()}>&nbsp;{this.feedbackText}</span> </h3>
+          <div className="prev-feedback">
+            <h3>Previous: <span className={this.getFeedbackClass()}>&nbsp;{this.feedbackText}</span> </h3>
+            <h3>Progress: <span className="correct">&nbsp;{this.totalPoints}</span> / {this.questionsAnswered} </h3>
+          </div>
         }
 
       </div>
