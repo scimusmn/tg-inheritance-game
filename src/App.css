@@ -57,7 +57,7 @@ h3 {
 }
 
 .photo {
-  top: 60%;
+  top: 61%;
   position: absolute;
   transform: translate(-50%, -50%);
   padding: 100px;
@@ -75,14 +75,14 @@ h3 {
 
 .option1 {
   position: absolute;
-  width: 40%;
+  width: 28.5%;
   left: 0%;
-  top: 75%;
+  top: 80%;
 }
 
 .option2 {
   position: absolute;
-  width: 40%;
+  width: 28.5%;
   right: 0%;
-  top: 75%;
+  top: 80%;
 }

@@ -31,15 +31,15 @@ export default class Game extends Component {
     this.quizIndex = 0;
 
     // Bind keyboard
-    Mousetrap.bind('1', () => {
+    Mousetrap.bind(['1', 'a'], () => {
       console.log('Left (1) button press');
       this.answerInput(1);
     });
-    Mousetrap.bind('2', () => {
+    Mousetrap.bind(['2', 'c'], () => {
       console.log('Right (2) button press');
       this.answerInput(2);
     });
-    Mousetrap.bind('r', () => {
+    Mousetrap.bind(['r', 'b'], () => {
       console.log('Reset (r) button press');
       this.resetGame();
     });
