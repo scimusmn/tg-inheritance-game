@@ -19,6 +19,8 @@ export default class Game extends Component {
 
     this.quizData = [];
     this.quizIndex = 0;
+    this.answeredCorrectly = -1;
+    this.feedbackText = '';
 
   }
 
@@ -39,6 +41,7 @@ export default class Game extends Component {
     });
     Mousetrap.bind('r', () => {
       console.log('Reset (r) button press');
+      this.resetGame();
     });
 
     this.refreshQuiz();
@@ -53,6 +56,14 @@ export default class Game extends Component {
 
   }
 
+  resetGame() {
+
+    this.quizIndex = -1;
+    this.nextQuestion();
+    this.feedbackText = '';
+
+  }
+
   answerInput(answer) {
 
     if (this.quizIndex >= this.quizData.length) {
@@ -63,11 +74,17 @@ export default class Game extends Component {
 
     if (answer == correctAnswer) {
       console.log('That is correct');
-      this.nextQuestion();
+      this.answeredCorrectly = 1;
+      this.feedbackText = 'Correct';
+
     } else {
       console.log('That is incorrect');
-      this.nextQuestion();
+      this.answeredCorrectly = 2;
+      this.feedbackText = 'Incorrect';
+
     }
+
+    this.nextQuestion();
 
   }
 
@@ -83,14 +100,11 @@ export default class Game extends Component {
       console.log('QUIZ FINISHED');
     }
 
-
-
   }
 
   refreshQuiz() {
 
     console.log('refreshQuiz', this.quizIndex);
-
 
     const current = this.quizData[this.quizIndex];
     console.log(current);
@@ -99,11 +113,29 @@ export default class Game extends Component {
 
   }
 
+  getFeedbackClass() {
+
+    let classStr = 'feedback';
+
+    if (this.answeredCorrectly == 2) {
+      classStr += ' incorrect';
+    } else if (this.answeredCorrectly == 1) {
+      classStr += ' correct';
+    }
+
+    return classStr;
+
+  }
+
   render() {
     return (
       <div className="game">
 
         <QuizSlide question={this.state.question} option1={this.state.option1} option2={this.state.option2} photoSrc={this.state.photoSrc} />
+
+        {this.feedbackText != '' &&
+          <h3 className="prev-feedback">Previous answer: <span className={this.getFeedbackClass()}>&nbsp;{this.feedbackText}</span> </h3>
+        }
 
       </div>
     );
