@@ -75,21 +75,17 @@ export default class Game extends Component {
       const correctAnswer = this.quizData[this.quizIndex].correctAnswer;
 
       if (answer == correctAnswer) {
-        console.log('That is correct');
         this.answeredCorrectly = 1;
         this.feedbackText = 'Correct';
         this.totalPoints ++;
 
       } else {
-        console.log('That is incorrect');
         this.answeredCorrectly = 2;
         this.feedbackText = 'Incorrect';
 
       }
 
       this.questionsAnswered ++;
-
-      console.log(this.totalPoints, ' / ', this.questionsAnswered)
 
     }
 
@@ -99,8 +95,6 @@ export default class Game extends Component {
   }
 
   nextQuestion() {
-
-    console.log('nextQuestion');
 
     this.quizIndex ++;
 
@@ -114,11 +108,7 @@ export default class Game extends Component {
 
   refreshQuiz() {
 
-    console.log('refreshQuiz', this.quizIndex);
-
     const current = this.quizData[this.quizIndex];
-    console.log(current);
-
     this.setState({ question: current.question, option1: current.option1, option2: current.option2, photoSrc:current.photoSrc});
 
   }

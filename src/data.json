@@ -20,11 +20,25 @@
       "correctAnswer": 2
     },
     {
+      "question": "Height",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/height.png",
+      "correctAnswer": 2
+    },
+    {
       "question": "Wizard scar",
       "option1": "Acquired",
       "option2": "Inherited",
       "photoSrc": "./images/Screen Shot 2018-09-17 at 9.25.45 AM.png",
       "correctAnswer": 1
+    },
+    {
+      "question": "Spots",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/spots.png",
+      "correctAnswer": 2
     },
     {
       "question": "Hair color",
@@ -44,7 +58,7 @@
       "question": "Speaking the language of your parents",
       "option1": "Acquired",
       "option2": "Inherited",
-      "photoSrc": "./images/speaking language of parents.png",
+      "photoSrc": "./images/Screen Shot 2018-10-03 at 2.14.32 PM.png",
       "correctAnswer": 1
     },
     {
@@ -55,24 +69,24 @@
       "correctAnswer": 1
     },
     {
-      "question": "Ability to swim",
+      "question": "Their ability to swim",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/fish swimming.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "His ability to swim",
       "option1": "Acquired",
       "option2": "Inherited",
       "photoSrc": "./images/swimming.png",
       "correctAnswer": 1
     },
     {
-      "question": "A parent and her children?",
+      "question": "Her biological children?",
       "option1": "No",
       "option2": "Yes",
       "photoSrc": "./images/dog and _kids_.png",
-      "correctAnswer": 1
-    },
-    {
-      "question": "Ability to swim",
-      "option1": "Acquired",
-      "option2": "Inherited",
-      "photoSrc": "./images/swimming.png",
       "correctAnswer": 1
     },
     {
@@ -91,31 +105,10 @@
     },
     {
       "question": "They all belong to the same litter",
-      "option1": "Yes",
-      "option2": "No",
+      "option1": "No",
+      "option2": "Yes",
       "photoSrc": "./images/litter.png",
-      "correctAnswer": 2
-    },
-    {
-      "question": "Tom Cruise wore braces to straighten his teeth. It’s  likely his kids will be born with straight teeth.",
-      "option1": "Yes",
-      "option2": "No",
-      "photoSrc": "./images/Tom Cruise.png",
-      "correctAnswer": 2
-    },
-    {
-      "question": "Spots",
-      "option1": "Acquired",
-      "option2": "Inherited",
-      "photoSrc": "./images/spots.png",
-      "correctAnswer": 2
-    },
-    {
-      "question": "Height",
-      "option1": "Acquired",
-      "option2": "Inherited",
-      "photoSrc": "./images/height.png",
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
       "question": "Yellow petals",
@@ -125,11 +118,39 @@
       "correctAnswer": 2
     },
     {
+      "question": "Because dogs are around people so much, they will eventually be born with human characteristics.",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/dogphone.png",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Curly hair",
+      "option1": "Acquired",
+      "option2": "Inherited",
+      "photoSrc": "./images/Curly hair.png",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Tom Cruise wore braces to straighten his teeth. It’s  likely his kids will be born with straight teeth.",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/Tom Cruise.png",
+      "correctAnswer": 1
+    },
+    {
       "question": "Skin color",
       "option1": "Acquired",
       "option2": "Inherited",
       "photoSrc": "./images/skin.png",
       "correctAnswer": 2
+    },
+    {
+      "question": "A mutation like this could pop up at any time.",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/mutant.png",
+      "correctAnswer": 1
     },
     {
       "question": "Their children will be born with tattoos.",
@@ -144,13 +165,6 @@
       "option2": "Inherited",
       "photoSrc": "./images/reading.png",
       "correctAnswer": 1
-    },
-    {
-      "question": "A mutation like this could pop up at any time.",
-      "option1": "No",
-      "option2": "Yes",
-      "photoSrc": "./images/mutant.png",
-      "correctAnswer": 2
     },
     {
       "question": "Finished!",
