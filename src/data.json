@@ -41,6 +41,13 @@
       "correctAnswer": 2
     },
     {
+      "question": "These friendly VISTA parents will probably have friendly VISTA children.",
+      "option1": "No",
+      "option2": "Yes",
+      "photoSrc": "./images/vista_children.png",
+      "correctAnswer": 2
+    },
+    {
       "question": "Hair color",
       "option1": "Acquired",
       "option2": "Inherited",
